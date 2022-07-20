@@ -1,0 +1,4 @@
+name = "UnicodeSetOperations"
+uuid = "054e409e-69e8-4e86-934c-762c359635ed"
+authors = ["April Herwig <aprillherwig@gmail.com>"]
+version = "0.1.0"
