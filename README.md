@@ -43,9 +43,6 @@ Set{Int64} with 4 elements:
   3
   1
 
-julia> isdisjoint(S, ∅)
-true
-
 julia> ∅ ⊆ S
 true
 
@@ -60,15 +57,14 @@ Set{Int64} with 4 elements:
   1
 
 julia> ∅ \ S
-∅
+Set{Int64}()
+
+julia> isdisjoint(S, ∅)
+true
 
 julia> while S ≠ ∅
-           println(pop!(S))
+           pop!(S)
        end
-4
-2
-3
-1
 
 julia> S
 Set{Int64}()
