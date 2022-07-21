@@ -16,9 +16,6 @@ julia> using UnicodeSetOperations
 julia> ∅
 ∅
 
-julia> ∅
-∅
-
 julia> S = Set([1,2,3,4])
 Set{Int64} with 4 elements:
   4
@@ -80,3 +77,10 @@ julia> S == ∅
 true
 
 ```
+
+### Using your own Types
+
+If you want UnicodeSetOperations to work with your defined type,
+ensure that your type has the methods `empty!`, `copy`, `iterate`.
+Optionally, you can define `isempty` as well to make the code run 
+faster.
