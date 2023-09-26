@@ -14,8 +14,8 @@ Add the package with:
 
 - The empty set `ø` is available in unicode as a generic empty set which adapts to types depending on operations
 - Set difference is defined as a unicode infix operator `⧷`. We use this instead of the (maybe expected) `\` or `-` since this would be type piracy and could cause unexpected results if users are not aware that the package is in use. 
-- Symmetric difference is defined as a unicode infix operator `Δ`. 
-- In-place operations are defined as unicode infix operators `∪ꜝ, ∩ꜝ, ⧷ꜝ, Δꜝ`. These are just aliases for `union!, intersect!, setdiff!, symdiff!`, respectively. 
+- Symmetric difference is defined as a unicode infix operator `⊖`. 
+- In-place operations are defined as unicode infix operators `∪ꜝ, ∩ꜝ, ⧷ꜝ, ⊖ꜝ`. These are just aliases for `union!, intersect!, setdiff!, symdiff!`, respectively. 
 
 ### Usage
 

@@ -34,8 +34,8 @@ using OrderedCollections
         @test set ⧷ ∅ == set
         @test ∅ ⧷ set == ∅
 
-        @test set Δ ∅ == set
-        @test ∅ Δ set == set
+        @test set ⊖ ∅ == set
+        @test ∅ ⊖ set == set
 
     end
     

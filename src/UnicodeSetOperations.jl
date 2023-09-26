@@ -1,18 +1,18 @@
 module UnicodeSetOperations
 
 export ∅
-export ∪ꜝ, ∩ꜝ, ⧷, ⧷ꜝ, Δ, Δꜝ
+export ∪ꜝ, ∩ꜝ, ⧷, ⧷ꜝ, ⊖, ⊖ꜝ
 
 struct EmptySet <: AbstractSet{Any} end
 const ∅ = EmptySet()
 
 const ⧷ = setdiff   # \rsolbar <TAB>
-const Δ = symdiff   # \Delta <TAB>
+const ⊖ = symdiff   # \Delta <TAB>
 
 const ∪ꜝ = union!   # \cup <TAB> \^! <TAB>
 const ∩ꜝ = intersect!
 const ⧷ꜝ = setdiff!
-const Δꜝ = symdiff!
+const ⊖ꜝ = symdiff!
 
 # compatibility function to avoid REPL breaking
 _isempty(s) = isempty(s)
